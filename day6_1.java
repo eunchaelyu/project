@@ -1,12 +1,26 @@
-public class day6_1 {
-    class Solution {
-        public String solution(String string) {
-            String answer = "";
-            int j=string.length();
-            for (int i=0; i<j; i++){
-                answer += string.charAt(j-i-1);
-            }
-            return answer;
+class Solution {
+    public String[] solution(String s) {
+        String str=new String(s);
+        String[] reverse = str.split("[.,!? ]" );
+        for(int j=0; j< reverse.length(); j++){
+            for (int i=0; i<reverse[i].length(); i++){
+                answer[j] += reverse.charAt(reverse[i].length()-i-1);
         }
+        }
+        return answer;
     }
+}
+
+
+
+
+String str=new String(s);
+String[] reverse = str.split("[.,!? ]" );
+for(int j=0; j< reverse.length(); j++){
+    for (int i=0; i<reverse[i].length(); i++){
+        answer[j] += reverse.charAt(reverse[i].length()-i-1);
+}
+}
+return answer;
+}
 }
