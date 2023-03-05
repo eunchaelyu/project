@@ -1,0 +1,15 @@
+private void dfs(TreeNode node, int val) {
+
+        val = Math.max(val, node.val);
+        if (node.val >= val) {
+            rst++;
+        }
+
+        if (node.right != null) {
+            dfs(node.right, val);
+        }
+
+        if (node.left != null) {
+            dfs(node.left, val);
+        }
+    }
