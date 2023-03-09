@@ -1,0 +1,12 @@
+   public MySet retainAll(MySet b) {
+        MySet result = new MySet();
+
+        for (int itemA: this.list) {
+            for (int itemB: b.list) {
+                if (itemA == itemB) {
+                    result.add(itemA);
+                }
+            }
+        }
+        return result;
+    }
